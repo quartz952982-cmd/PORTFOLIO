@@ -1,0 +1,227 @@
+@charset "utf-8";
+@media screen and (max-width : 1140px) {
+    html {
+        font-size: 8px;
+    }
+
+    body {
+        height: auto !important;
+    }
+
+    .top-wrap img {
+        width: 20%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .frofile-subtext {
+        white-space: nowrap;
+    }
+
+    .profile,
+    .clonecoding,
+    .redesign,
+    .design {
+        padding: 100px 0 50px;
+    }
+
+    .profile-wrap img {
+        width: 100%;
+    }
+
+    .redesign-wrap>div img {
+        width: 90%;
+    }
+
+    .ban-wrap {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .ban-wrap img {
+        width: 90%;
+    }
+
+    .last-right {
+        position: absolute;
+        right: 50px;
+        bottom: 150px;
+    }
+
+    .redesign-wrap-1 img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 780px) {
+    .top-wrap {
+        white-space: normal;
+    }
+
+    .redesign-wrap-1 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width : 425px) {
+    html {
+        font-size: 6px;
+    }
+
+    body {
+        height: auto !important;
+    }
+
+    .top-wrap {
+        width: 100%;
+    }
+
+    .top-wrap img {
+        width: 10vw;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .cablecar-w {
+        display: none;
+    }
+
+    .sec1-title,
+    .sec2-title,
+    .sec3-title,
+    .sec4-title {
+        margin: 0 auto 50px;
+    }
+
+    .profile,
+    .clonecoding,
+    .redesign,
+    .design {
+        padding: 100px 20px 50px;
+    }
+
+    .h-bg p {
+        font-size: 20rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-wrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-top: 50px;
+    }
+
+    .profile-wrap img {
+        width: 60%;
+        height: auto;
+    }
+
+    .profile-wrap>p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .frofile-left {
+        text-align: center;
+    }
+
+    .frofile-right {
+        text-align: center;
+    }
+
+    .frofile-icons img {
+        width: 90%;
+    }
+
+    /* clone */
+    .clone {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .clonecoding .clone>div:has(.img-wrap) {
+        order: 1 !important;
+    }
+
+    .clonecoding .clone>div:has(.clone-text) {
+        order: 2 !important;
+    }
+
+    .img-wrap img {
+        width: 80%;
+        height: auto;
+    }
+
+    .img-wrap::after {
+        display: none;
+    }
+
+    .img-wrap::before {
+        display: none;
+    }
+
+
+    /* redesign */
+    .redesign-wrap-1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .redesign-wrap-1>div {
+        width: 100%;
+    }
+
+    .redesign-wrap-1 img {
+        width: 100%;
+    }
+
+    /* design */
+    .ban-wrap {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .ban-wrap img {
+        width: 90%;
+    }
+
+    .logo img {
+        width: 90%;
+    }
+
+    /*  */
+    .last-text {
+        font-size: 8rem;
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .last-right {
+        position: absolute;
+        right: 30px;
+        bottom: 100px;
+
+    }
+
+    .last-text {
+        font-size: 10rem;
+    }
+
+    .cablecar {
+        width: 50px;
+    }
+
+    .gotop img {
+        width: 60%;
+    }
+
+    .gotop {
+        right: 10px;
+        bottom: 20px;
+    }
+}

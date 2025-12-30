@@ -1,0 +1,485 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header */
+.h-bg {
+    width: 100%;
+    min-height: 960px;
+    height: 100vh;
+    background: url('../images/top-bg.png') no-repeat center/cover;
+    position: relative;
+}
+
+/* .h-bg p {
+    font-family: "EB Garamond", serif;
+    font-size: 25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+} */
+
+.top-wrap {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.top-wrap img {
+    display: inline-block;
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+}
+
+.top-wrap img:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.top-wrap img:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.top-wrap img:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.top-wrap img:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.top-wrap img:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.top-wrap img:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.top-wrap img:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.top-wrap img:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.top-wrap img:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+/* main */
+main {
+    font-family: "Baloo 2", sans-serif;
+    min-height: 100vh;
+    display: block;
+    background: linear-gradient(#54a6d6 20%, #2BAEF1 60%, #D0FDFF 90%);
+}
+
+/* cablecar */
+.cablecar-w {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 10000;
+    pointer-events: none;
+    background: url('../images/cableline.png') repeat-x center/100% auto;
+    opacity: 0;
+
+}
+
+.cablecar-w.active {
+    opacity: 1;
+}
+
+.cablecar {
+    position: relative;
+    width: 80px;
+    /* top: 40px; */
+    z-index: 11111;
+}
+
+/* section-frofile */
+.profile {
+    padding: 300px 120px 100px;
+}
+
+.sec1-title {
+    font-size: 5rem;
+    background-color: #fff;
+    width: 300px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 auto 30px;
+    font-weight: 600;
+}
+
+.profile-wrap {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    color: #fff;
+}
+
+.frofile-left {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.frofile-bf {
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 3.8rem
+}
+
+.frofile-subtext {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.frofile-subtext span {
+    padding-left: 20px;
+}
+
+.frofile-icons {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.frofile-left-top .frofile-bf::after {
+    content: url('../images/about-af.png');
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path .3s ease;
+}
+
+.frofile-left-top .frofile-bf:hover::after {
+    clip-path: inset(0 0 0 0);
+}
+
+.frofile-left-btm .frofile-bf::after {
+    content: url('../images/tools-af.png');
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path .3s ease;
+}
+
+.frofile-left-btm .frofile-bf:hover::after {
+    clip-path: inset(0 0 0 0);
+}
+
+.frofile-right .frofile-bf::after {
+    content: url('../images/ed-af.png');
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path .3s ease;
+}
+
+.frofile-right .frofile-bf:hover::after {
+    clip-path: inset(0 0 0 0);
+}
+
+/* section2-clonecoding */
+.clonecoding {
+    padding: 300px 150px 100px;
+}
+
+.sec2-title {
+    font-size: 5rem;
+    background-color: #fff;
+    width: 400px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 auto 120px;
+    font-weight: 600;
+}
+
+.clone {
+    text-align: center;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.clone-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 3rem;
+}
+
+.clone-text>p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 3.6rem;
+
+}
+
+.clone-subtext {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.clone-subtext p {
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+.img-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrap::after {
+    content: url('../images/clone-slide-left.png');
+    position: absolute;
+    top: 134px;
+    left: 0;
+    z-index: 9;
+    transition: all 1s;
+}
+
+.img-wrap::before {
+    content: url('../images/clone-slide-right.png');
+    position: absolute;
+    top: 134px;
+    right: 0;
+    z-index: 9;
+    transition: all 1s;
+}
+
+.img-wrap:hover::after {
+    left: -500px;
+}
+
+.img-wrap:hover::before {
+    right: -500px;
+}
+
+/* section3-redesign */
+.redesign {
+    padding: 300px 150px 100px;
+}
+
+.sec3-title {
+    font-size: 5rem;
+    background-color: #fff;
+    width: 350px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 auto 150px;
+    font-weight: 600;
+}
+
+.redesign-wrap-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec3-text1 {
+    padding: 50px 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.redesign-flex {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.redesign-flex p {
+    background-color: #fff;
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.redesign-process {
+    cursor: pointer;
+}
+
+/* sec4-design */
+.design {
+    padding: 300px 150px 100px;
+}
+
+.sec4-title {
+    font-size: 5rem;
+    background-color: #fff;
+    width: 350px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 auto 150px;
+    font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.sec4-subtext {
+    padding: 150px 0 50px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.detail-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+
+}
+
+.detailimg img {
+    border-radius: 50px;
+    width: 400px;
+}
+
+.detailimg {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    transform: perspective(400px);
+}
+
+.front,
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    backface-visibility: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.front {
+    transform: rotateY('0deg');
+}
+
+.back {
+    transform: rotateY(-180deg);
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.detailimg:hover .front {
+    transform: rotateY(180deg);
+}
+
+.detailimg:hover .back {
+    transform: rotateY(0deg);
+}
+
+/* last */
+.last {
+    padding: 200px 0;
+    position: relative;
+}
+
+.last-text {
+    font-size: 20rem;
+    font-family: "EB Garamond", serif;
+    text-align: center;
+}
+
+.last-text2 {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+}
+
+.last-right {
+    position: absolute;
+    right: 100px;
+    bottom: 150px;
+
+}
+
+.last a {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.last-sub-text {
+    padding-top: 20px;
+    font-size: 1.4rem;
+}
+
+/* gotop */
+.gotop {
+    display: none;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    z-index: 999;
+}
