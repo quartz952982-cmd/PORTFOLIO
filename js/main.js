@@ -16,4 +16,5 @@ $(function () {
             $('.cablecar-w').addClass('active')
         } else { $('.cablecar-w').removeClass('active')}
     })
+    
 })
