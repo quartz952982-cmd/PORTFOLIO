@@ -117,7 +117,7 @@
     }
 }
 
-@media screen and (max-width : 1000px) {
+@media screen and (max-width : 1030px) {
     .profile-wrap>p>img {
         width: 280px;
     }
@@ -238,7 +238,7 @@
     }
 }
 
-@media screen and (max-width : 550px) {
+@media screen and (max-width : 510px) {
     html {
         font-size: 6px;
     }
@@ -344,7 +344,7 @@
 
     /* redesign */
     .sec3-title {
-        width: 300px;
+        width: 280px;
     }
 
     .redesign-wrap-1 {
@@ -355,7 +355,16 @@
 
 
     .redesign-wrap-1>div img {
-        width: 300px;
+        padding: 10px 30px;
+    }
+
+    .r-f2 {
+        flex-wrap: wrap;
+    }
+
+    .r-f2 p {
+        flex: none;
+        width: 35%;
     }
 
     /* design */
